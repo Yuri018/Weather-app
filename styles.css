@@ -1,0 +1,140 @@
+body {
+  background-image: url("background.jpeg");
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 220px;
+  text-align: center;
+  box-shadow: 3px 3px 3px #ccc;
+  background-color: rgba(18, 45, 77, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+header h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+main {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+#search-wrapper {
+  display: flex;
+  /* padding-bottom: 40px; */
+  justify-content: center;
+  width: 710px;
+  gap: 14px;
+}
+
+#city-input {
+  display: flex;
+  padding: 10px 155px;
+  border-radius: 40px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+#search-button {
+  display: flex;
+  padding: 12px 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+#search-button:hover {
+  background-color: dodgerblue;
+}
+
+#weather-info-container {
+  display: flex;
+  /* flex-direction: column; */
+ justify-content: space-evenly;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 710px;
+  height: 150px;
+  box-shadow: 2px 2px 3px #ccc;
+  color: white;
+  box-sizing: border-box;
+  font-weight: bold;
+  background-color: rgba(18, 45, 77, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+#load {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+#weather-icon {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: none;
+  flex-shrink: 0;
+}
+
+#degree {
+  font-size: 50px;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+#weather-city {
+  width: 250px;
+  padding: 10px;
+}
+
+#degree-and-city {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
